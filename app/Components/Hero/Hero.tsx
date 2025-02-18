@@ -7,13 +7,14 @@ import { motion } from "framer-motion";
 import { FaFacebookF, FaLinkedinIn, FaDribbble, FaGithub } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 // import heroImage from '/heroImage.svg'
+import animationData from "@/public/lottie/hero.json";
 import Lottie from 'react-lottie';
 const Hero = () => {
-  const heroImage = "/heroImage.svg"; // Directly use the public path
+  // const heroImage = "/hero.json"; // Directly use the public path
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: heroImage,
+    animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
     }
@@ -29,7 +30,7 @@ const Hero = () => {
           animate={{ scale: [1, 1.5, 1] }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         >
-          HI
+          
         </motion.div>
 
         {/* Left Side Content */}
